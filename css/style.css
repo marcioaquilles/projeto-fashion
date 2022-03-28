@@ -259,15 +259,7 @@ body {
     .img-model img {
         width: 100%;
         height: 100%;
-    }
-
-    /* .img-model {
-        background-image: url("images/img-model");
-        max-width: 100%;
-        height: ;
-        background-repeat: no-repeat;
-        background-size: cover;
-    } */
+    }   
 
     .portfolio {
         width: 90%;
@@ -353,3 +345,182 @@ body {
         margin-bottom: 0;
     }
 }
+
+/* Tablets */
+@media (min-width: 600px) {
+     #principal {
+        width: 100%;        
+        margin: 0 auto;
+    }
+
+    .header-top {
+        height: 60px;
+        background: #162028;
+        position: relative;
+    }
+
+    .logotipo {
+        margin: 10px 0 0 30px;
+    }
+
+    /* Inicio Menu */
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 10px;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;        
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 43px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 80px;
+    }
+
+    .open {
+        position: absolute;
+        top: 5px;
+        right: 50px;
+        font-size: 60px;
+        color: #fff;
+    }
+
+    @media screen and (max-height: 450px) {
+        .overlay {
+            overflow-y: auto;
+        }
+        .overlay a {
+            font-size: 20px;
+        }
+        .overlay .closebtn {
+            font-size: 30px;
+            top: 15px;
+            right: 35px;
+        }
+    }
+    /* Fim menu */
+
+    .img-model {       
+        height: 450px;
+    }
+
+    .img-model img {
+        width: 100%;
+        height: 100%;
+    }  
+
+    .portfolio {
+        width: 90%;
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    .portfolio h1 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 35px;
+    }
+
+    .portfolio p {
+        font-size: 1.2em;
+        font-weight: 500;
+        text-align: justify;
+        letter-spacing: 0.4px;
+        line-height: 1.5;
+    }
+
+    .responsive {
+        width: 100%;        
+        /* height: 400px; */
+    }
+
+    section.gallery {
+        padding: 4px;
+        /* width: 100%; */
+    }
+
+    .gallery-card {
+        width: 100%;
+        height: auto;
+        /* margin: 0; */
+    }
+
+    .gallery-card img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .gallery-text {
+        margin-bottom: 30px;
+    }
+
+    .about {
+        width: 99%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .about h2 {
+        font-size: 2em;
+        text-align: center;
+        font-weight: 500;
+        /* font-weight: bold; */
+    }
+
+    .about p {
+        font-size: 1.2em;
+        /* font-weight: 200; */
+        text-align: justify;
+        margin: 0 auto;
+        width: 100%;
+        letter-spacing: 0.4px;
+        line-height: 1.5;        
+    }
+
+    .contact {
+        margin-top: 30px;
+    }
+
+    .contact address {
+        font-size: 1.3em;
+    }
+
+    .map {
+        width: 99%;
+        margin: 0 auto;
+    }
+
+    iframe {
+        margin-bottom: 0;
+    }
+}
+
