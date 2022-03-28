@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<!-- doctype informa ao agente de usuário a versão do html que deve ser renderizada-->
 <html lang="pt-br">
     <head>
-        <title>pagina de exemplo estrutura basica</title>
+        <title>Projeto Fashion</title>
         <meta charset="utf-8" />
-        <meta name="author" content="Daniel" />
-        <meta name="description" content="descrição bacanuda" />
-        <meta name="keywords" content="html5, tecnologia" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Márcio Aquilles" />
+        <meta name="description" content="Projeto Fashion" />
+        <meta name="keywords" content="sites, web, desenvolvimento" />
+        <meta
+            property="og:url"
+            content="https://marcioaquilles.github.io/projeto-fashion/"
+        />
+        <meta property="og:title" content="Projeto Fashion" />
+        <meta
+            property="og:description"
+            content="Projeto desenvolvido em HTML, CSS e JavaScript"
+        />
+        <meta property="og:projeto-fashion" content="Projeto Fashion" />
+        <meta property="og:type" content="website" />
+        <meta property="website:main" content="Página Inicial do Projeto" />
+        <meta property="og:image" content="https://pixabay.com/images/id-1399332/" />
+        <meta property="og:image:type" content="./imagens/baby-gd.jpg" />
+        <meta property="og:image:width" content="640" />    
+        <meta property="og:image:height" content="426" /> 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +31,11 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="./imagens/moda.ico"
+            type="image/x-icon"
+        />
     </head>
 
     <body>
@@ -34,9 +54,9 @@
                     <div class="overlay-content">
                         <nav class="header-nav">
                             <ul>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -50,7 +70,7 @@
                 <div class="overlay-content"></div>
             </header>
 
-            <div class="img-model">
+            <div class="img-model" id="portfolio">
                 <img src="imagens/topo.jpg" alt="Modelo" />
             </div>
 
@@ -97,7 +117,7 @@
                 </div>
             </section>
 
-            <article class="about">
+            <article class="about" id="about">
                 <h2>Everything Never Enough <br />Just Fashion</h2>
                 <p>
                     Praesent placerat eros eget lacus ullamcorper, id dapibus
@@ -112,7 +132,7 @@
                 </p>
             </article>
 
-            <div class="contact">
+            <div class="contact" id="contact">
                 <address>
                     Call me now for design <br />
                     012-1234-4567
